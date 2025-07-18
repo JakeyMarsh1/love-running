@@ -95,3 +95,45 @@ main {
 footer {
   background-color: orange;
 }
+
+/* media queriy: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+  /*header*/
+  nav {
+    display: block;
+    position: relative;
+    width: fit-content;
+    box-shadow: none;
+    padding-right: 1rem;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu li {
+    padding-left: 1em;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+
+  #logo {
+    font-size: 200%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
+  /*main content*/
+  main {
+    /*push main content down to avoid overlap with header*/
+    margin-top: 79px; /* Adjusted for header height */
+}
+}
+
+/* large devices (laptops and desktops 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+    }
+}
